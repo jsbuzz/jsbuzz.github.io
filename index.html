@@ -8,11 +8,12 @@
         font-size: 50px;
       }
 
-      h1 {
+      h1,
+      h3 {
         text-align: center;
       }
 
-      div {
+      section {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -21,15 +22,53 @@
       a {
         padding: 20px;
       }
+
+      div.bank-details {
+        font-size: 30px;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      div.row {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .row strong {
+        white-space: nowrap;
+      }
+      .row code {
+        text-align: right;
+        margin-left: 20px;
+      }
     </style>
-    <title>Debo</title>
+    <title>Debo 🎁</title>
   </head>
   <body>
-    <h1>Debo</h1>
-    <div>
+    <h1>Debo 🎁</h1>
+    <div class="bank-details">
+      <h3>EUR account details</h3>
+      <div class="row">
+        <strong>Account holder:</strong><code>Matyas Buczko</code>
+      </div>
+      <div class="row"><strong>BIC:</strong> <code>TRWIBEB1XXX</code></div>
+      <div class="row">
+        <strong>IBAN:</strong> <code>BE68 9670 1830 1034</code>
+      </div>
+      <div class="row">
+        <strong>Bank Address:</strong>
+        <code>Avenue Louise 54, Room S52 Brussels 1050 Belgium</code>
+      </div>
+    </div>
+
+    <h3>Quick links</h3>
+    <section>
       <a href="https://wise.com/pay/r/nuGFeaYiyvUeowCnws6k-BNnEVs">€5</a>
       <a href="https://wise.com/pay/r/b2z78HJ1oAcfbZymuNm_U-YpL5E">€10</a>
       <a href="https://wise.com/pay/r/AkaGzgt_UIx_SJMw28-uEi8weeM">€20</a>
-    </div>
+    </section>
   </body>
 </html>
